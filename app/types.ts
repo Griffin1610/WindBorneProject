@@ -1,3 +1,17 @@
-export type Balloon = [number, number, number];
-export type HourlyBalloons = Balloon[];
-export type BalloonData = HourlyBalloons[];
+export type BalloonData = {
+    hour: number;
+    lat: number;
+    lng: number;
+    alt: number;
+};
+
+export type BalloonPath = {
+    id: number;
+    color: string;
+    coordinates: Array<{
+        lat: number;
+        lng: number;
+        alt: number;
+        hour: number;
+  }>;
+};
